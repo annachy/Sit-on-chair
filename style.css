@@ -1,0 +1,163 @@
+
+@font-face {
+    font-family: 'railwayregular';
+    src: url('fonts/railway-webfont.eot');
+    src: url('fonts/railway-webfont.eot?#iefix') format('embedded-opentype'),
+    url('fonts/railway-webfont.woff2') format('woff2'),
+    url('fonts/railway-webfont.woff') format('woff'),
+    url('fonts/railway-webfont.ttf') format('truetype'),
+    url('fonts/railway-webfont.svg#railwayregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+    font-family: 'railwayregular', sans-serif;
+}
+
+#container {
+    width: 100%;
+}
+
+header {
+    background-color: black;
+    color: white;
+    height: 40px;
+    width: 100%;
+    font-weight: bold;
+    position: fixed;
+    z-index: 10;
+}
+.main_width {
+    margin: auto;
+    width: 1200px;
+}
+
+#logo {
+    float: left;
+    text-transform: uppercase;
+    padding: 15px 0 15px 67px;
+
+}
+
+nav {
+    float: right;
+    padding: 15px 50px 0 0;
+
+
+}
+
+nav li {
+    display: inline-block;
+    text-transform: uppercase;
+    padding-right: 50px;
+}
+
+.green {
+    color: #1dc6b3;
+}
+
+#slider{
+    padding-top: 100px;
+    height: 500px;
+    background-color: white;
+    background-image: linear-gradient(#fdfdfd, #cbced5);
+}
+
+#slider div div {
+    float: left;
+
+
+}
+
+#slider div div:first-child, #slider div div:last-child {
+    font-size: 70px;
+    font-family: Arial, sans-serif;
+    width: 10%;
+    text-align: center;
+    padding-top: 150px;
+}
+
+#slider div:nth-child(3), #slider div:nth-child(4){
+    width: 35%
+}
+
+.text {
+
+    font-size: 14px;
+    line-height: 1.7em;
+}
+
+p[class="text"] {
+    text-align: center;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 50px;
+}
+
+button {
+    text-transform: uppercase;
+    font-size: 20px;
+    background-color: #1dc6b3;
+    border: 2px solid #1dc6b3;
+    width: 260px;
+    height: 50px;
+    border-radius: 15px;
+    color: white;
+    margin: 50px;
+    display: inline-block;
+
+}
+
+#products {
+    height: 350px;
+}
+
+.image {
+    height: 220px;
+    width: 340px;
+    padding: 25px;
+    position: relative;
+    z-index: 1;
+}
+
+.description {
+    height: 240px;
+    width: 340px;
+    border: 1px solid #dbdbdb;
+    margin-top: 30px;
+
+}
+
+.image, .description {
+    float: left;
+}
+
+.product_name {
+    position: absolute;
+    top: 180px;
+    z-index: 2;
+    height: 60px;
+    width: 340px;
+    background-color: rgba(255,255,255,.3);
+    text-indent: 20px;
+
+}
+
+.chair {
+    vertical-align: middle;
+    border-bottom: 4px solid #28c8ac;
+}
+
+
+
+#prices {
+    background-color: #f1f1f1;
+    height: 700px;
+}
