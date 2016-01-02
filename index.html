@@ -7,6 +7,7 @@
     <meta name="keywords" content=" "/>
     <link rel="stylesheet" href="reset.css" type="text/css">
     <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="fontello-07f84164/css/fontello.css" type="text/css">
 
 </head>
 
@@ -15,25 +16,33 @@
 <div id="container">
     <header>
         <div class="main_width">
-        <div id="logo">Sit <span class="green">on</span> chair</div>
+            <div id="logo">Sit <span class="green">on</span> chair
+            </div>
         <nav>
             <ul>
-                <li>O firmie</li>
-                <li>Galeria</li>
-                <li>Kontakt</li>
+                <li><a href="#">O firmie</a>
+                    <div id="up-dir"><i class="icon-up-dir"></i></div>    <!-- ikona - trójkąt nad rozwijanym menu -->
+                    <ul class="dropdown">
+                        <li><a href="#">Aktualności</a></li>
+                        <li><a href="#">Nasz team</a></li>
+                        <li><a href="#">Historia</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Galeria</a></li>
+                <li><a href="#">Kontakt</a></li>
             </ul>
         </nav>
         </div>
     </header>
     <section id="slider">
             <div class="main_width">
-              <div><span class="green"> &lt; </span></div>
+              <div><span class="green"> <i class="icon-angle-left"></i> </span></div>
               <div> <img src="images/black_chair.png"></div>
               <div>
                 <h2>Sit <span class="green">on</span> our <span class="green">chair</span></h2>
                 <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eu leo sed lorem luctus malesuada. Ut in malesuada dolor. Nulla mollis tempor sodales. Maecenas dictum tellus tellus, sit amet auctor tortor molestie non.  </p>
               <p><button type="button">zobacz więcej</button></p></div>
-              <div><span class="green"> &gt; </span></div>
+              <div><span class="green"> <i class="icon-angle-right"></i> </span></div>
             </div>
     </section>
 

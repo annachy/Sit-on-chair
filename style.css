@@ -25,10 +25,10 @@ header {
     color: white;
     height: 40px;
     width: 100%;
-    font-weight: bold;
     position: fixed;
     z-index: 10;
-}
+    }
+
 .main_width {
     margin: auto;
     width: 1200px;
@@ -37,21 +37,80 @@ header {
 #logo {
     float: left;
     text-transform: uppercase;
-    padding: 15px 0 15px 67px;
-
+    padding: 15px 0 15px 68px;
 }
 
 nav {
     float: right;
-    padding: 15px 50px 0 0;
-
-
-}
+    padding: 15px 0 15px 0;
+    }
 
 nav li {
     display: inline-block;
     text-transform: uppercase;
-    padding-right: 50px;
+}
+
+nav li:first-of-type {
+    padding-right: 52px;
+}
+
+nav li:nth-of-type(2) {
+    padding-right: 39px;
+}
+
+nav li:last-of-type {
+    padding-right: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
+.dropdown {
+    background-color: black;
+    color: white;
+    width: 130px;
+    height: 120px;
+    position: relative;
+    top: -15px;
+    display: none;
+
+}
+
+.dropdown li a {
+    text-transform: none;
+    text-decoration: none;
+    color: white;
+    display: block;   /* dlaczego nie działa? */
+
+}
+
+.dropdown li {
+    padding-top: 16px;
+    padding-left: 13px;
+
+
+}
+
+nav li:first-of-type:hover > ul.dropdown {
+    display: block;
+}
+
+.icon-up-dir {
+    border: 2px solid red;
+    color: black;
+    font-size: 40px;
+    position: relative;
+    left: 30px;
+    top: 5px;
+    /* display: none;     dlaczego?*/
+
+}
+
+nav li:first-of-type:hover > #up-dir {
+    display: block;
 }
 
 .green {
@@ -59,7 +118,7 @@ nav li {
 }
 
 #slider{
-    padding-top: 100px;
+    padding-top: 145px;
     height: 500px;
     background-color: white;
     background-image: linear-gradient(#fdfdfd, #cbced5);
