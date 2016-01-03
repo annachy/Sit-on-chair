@@ -30,7 +30,7 @@ header {
     }
 
 .main_width {
-    margin: auto;
+    margin: 0 auto;
     width: 1200px;
 }
 
@@ -143,9 +143,10 @@ nav li:first-of-type:hover > #up-dir {
 }
 
 .text {
-
+    color: #383838;
     font-size: 14px;
     line-height: 1.7em;
+    margin-top: 43px;
 }
 
 p[class="text"] {
@@ -165,13 +166,22 @@ button {
     font-size: 20px;
     background-color: #1dc6b3;
     border: 2px solid #1dc6b3;
-    width: 260px;
-    height: 50px;
+    width: 262px;
+    height: 53px;
     border-radius: 15px;
     color: white;
     margin: 50px;
     display: inline-block;
+}
 
+p[type="button"] {
+    text-align: center;    /* jak wyśrodkować ten button? */
+}
+
+
+.center {
+    margin: 0 auto;
+    width: 1050px;
 }
 
 #products {
@@ -218,5 +228,23 @@ button {
 
 #prices {
     background-color: #f1f1f1;
-    height: 700px;
+    height: 725px;
+}
+
+#contact {
+    height: 550px;
+    background-color: #ffffff;
+    border: 2px solid green;
+}
+
+footer {
+    height: 100px;
+    background-color: #ffffff;
+    border: 2px solid red;
+    color: #b0b0b0;
+}
+
+footer p {
+    vertical-align: middle;
+    font-size: 12px;
 }
