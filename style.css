@@ -233,7 +233,7 @@ p[type="button"] {
 #basic, #standard, #advance {
     float: left;
     width: 330px;
-    height: 538px;
+    height: 500px;
     border: 1px solid black;
     text-align: center;
     box-sizing: border-box;
@@ -250,7 +250,30 @@ p[type="button"] {
     font-size: 25px;
 }
 
-#basic p:first-child {
+.circle-top {
+    box-sizing: border-box;
+    width: 57px;
+    height: 57px;
+    background-color: #c2c2c2;
+    border: 15px solid white;
+    border-radius: 50%;
+    position: relative;
+    z-index: 1;
+    left: 125px;
+    top: -40px;
+
+
+}
+
+.circle-top:before {
+    content: " ";
+    position: absolute;
+    z-index: 2;
+    border: 5px solid green;
+}
+
+
+#basic td p:nth-of-type(2) {
     text-transform: uppercase;
     color: #27c7ab;
     font-size: 22px;
@@ -258,11 +281,11 @@ p[type="button"] {
     text-align: center;
 }
 
-#basic p:last-child {
+#basic p:last-of-type {
     border: 2px solid #e4e4e4;
     width: 130px;
     height: 50px;
-    padding-top: 40px;
+    padding-top: 50px;
     padding-bottom: 30px;
     border-radius: 50%;
 
