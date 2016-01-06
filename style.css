@@ -151,7 +151,7 @@ nav li:first-of-type:hover > #up-dir {
 }
 
 .text {
-    color: #383838;
+    color: #222222;
     font-size: 14px;
     line-height: 1.7em;
     margin-top: 43px;
@@ -171,20 +171,19 @@ h2 {
 
 button {
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: 25px;
     background-color: #1dc6b3;
     border: 2px solid #1dc6b3;
     width: 262px;
     height: 53px;
-    border-radius: 15px;
+    border-radius: 10px;
     color: white;
-    margin: 50px;
-    display: inline-block;
+    display: block;
+    margin: 50px auto 0 auto;
+
 }
 
-p[type="button"] {
-    text-align: center;    /* jak wyśrodkować ten button? */
-}
+
 
 .center {
     margin: 0 auto;
@@ -198,17 +197,21 @@ p[type="button"] {
 .image {
     height: 220px;
     width: 300px;
-    padding: 25px;
+    padding: 30px;
     position: relative;
     z-index: 1;
+}
+
+#products .image:first-of-type {
+    padding-left: 0;
 }
 
 .description {
     height: 250px;
     width: 320px;
     border: 1px solid #dbdbdb;
-    margin-top: 25px;
-    margin-left: 25px;
+    margin-top: 30px;
+    margin-left: 30px;
 }
 
 .image, .description {
@@ -278,7 +281,7 @@ td {
     margin-right: 25px;
 }
 
-#prices div div:first-child {
+.section-head {
     padding: 45px 0 0 0;
     text-transform: uppercase;
     color: #565656;
@@ -380,9 +383,79 @@ tr:nth-child(5) {
 #contact {
     height: 550px;
     background-color: #ffffff;
-    border: 2px solid green;
 }
 
+#left {
+    float: left;
+    margin-right: 50px;
+
+}
+
+#right {
+    float: right;
+    width: 350px;
+}
+
+#contact .underline-long {
+    margin-bottom: 45px;
+}
+
+input, textarea {
+    border: 1px solid #a6e3d3;
+    margin-bottom: 25px;
+}
+
+input {
+    height: 65px;
+    width: 635px;
+    text-indent: 10px;
+}
+
+textarea {
+    width: 635px;
+    height: 170px;
+    resize: none;
+    text-indent: 10px;
+    font-family: 'railwayregular', sans-serif;
+}
+
+
+::-webkit-input-placeholder {
+    color:#cdcdcd;
+    font-size: 20px;
+    font-family: 'railwayregular', sans-serif;
+}
+::-moz-placeholder {
+    color:#cdcdcd;
+    font-size: 30px;
+    font-family: 'railwayregular', sans-serif;
+
+}
+:-ms-input-placeholder {
+    color:#cdcdcd;
+    font-size: 30px;
+    font-family: 'railwayregular', sans-serif;
+}
+
+#red-chair {
+    display: block;
+    width: 225px;
+    height: 190px;
+    margin: auto;
+    padding-bottom: 15px;
+}
+
+#tick {
+    display:block;
+    float: left;
+    padding-right: 10px;
+}
+
+#right div div {
+    font-size: 20px;
+    color: #c0c0c0;
+    padding-top: 10px;
+}
 footer {
     height: 100px;
     background-color: #ffffff;
@@ -397,11 +470,9 @@ footer p {
 
 #social-icons {
     position: relative;
-    top: 20px;
-    left: 500px;
+    top: 25px;
+    left: 350px;
 }
-
-
 
 #logo-bottom {
     text-transform: uppercase;
