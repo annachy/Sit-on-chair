@@ -34,6 +34,14 @@ header {
     width: 1200px;
 }
 
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+    top: -0.5em;
+}
+
 #logo {
     float: left;
     text-transform: uppercase;
@@ -196,15 +204,31 @@ p[type="button"] {
 }
 
 .description {
-    height: 240px;
+    height: 250px;
     width: 320px;
     border: 1px solid #dbdbdb;
-    margin-top: 30px;
-
+    margin-top: 25px;
+    margin-left: 25px;
 }
 
 .image, .description {
     float: left;
+}
+
+#products h2 {
+    font-size: 18px;
+    font-weight: normal;
+    text-transform: none;
+    text-align: left;
+    padding-top: 20px;
+    text-indent: 18px;
+}
+
+#products .text {
+    text-align: left;
+    padding-left: 18px;
+    margin-top: 17px;
+    color: #6e6e6e;
 }
 
 .product_name {
@@ -215,18 +239,22 @@ p[type="button"] {
     width: 340px;
     background-color: rgba(255,255,255,.3);
     text-indent: 20px;
-
 }
 
 .chair {
-    vertical-align: middle;
-    border-bottom: 4px solid #28c8ac;
+    padding-top: 15px;
+}
+
+.underline-short {
+    width: 135px;
+    height: 6px;
+    background-color: #28c8ac;
+    margin-left: 16px;
 }
 
 
-
 #prices {
-    background-color: #f1f1f1;
+    background-color: #f9f9f9;
     height: 725px;
 }
 
@@ -234,61 +262,112 @@ p[type="button"] {
     float: left;
     width: 330px;
     height: 500px;
-    border: 1px solid black;
-    text-align: center;
+    border: 1px solid #d3d3d3;
     box-sizing: border-box;
 }
+
+td {
+    height: 40px;
+    width: 330px;
+    text-align: center;
+    vertical-align: middle;
+}
+
 
 #basic, #standard {
     margin-right: 25px;
 }
 
 #prices div div:first-child {
-    padding: 45px 0 45px 0;
+    padding: 45px 0 0 0;
     text-transform: uppercase;
     color: #565656;
     font-size: 25px;
 }
 
+.underline-long {
+    width: 320px;
+    height: 6px;
+    background-color: #28c8ac;
+    margin: 0 0 80px 0;
+}
+
+p[class="circle-top"] {
+    display: block;
+}
+
 .circle-top {
-    box-sizing: border-box;
+    background-color: #ffffff;
     width: 57px;
     height: 57px;
-    background-color: #c2c2c2;
-    border: 15px solid white;
     border-radius: 50%;
     position: relative;
-    z-index: 1;
-    left: 125px;
+    border: 2px solid #d6d6d6;
+    margin: auto;
     top: -40px;
-
-
 }
 
-.circle-top:before {
-    content: " ";
+/*
+.inner-circle {             jak to wypozycjonować??? (uwaga -  <div class="inner-circle"> usunięty z htmla)
     position: absolute;
-    z-index: 2;
-    border: 5px solid green;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #c2c2c2;
 }
+*/
 
-
-#basic td p:nth-of-type(2) {
+td p:nth-of-type(2) {
     text-transform: uppercase;
     color: #27c7ab;
     font-size: 22px;
-    padding: 22px 22px;
+    padding-bottom: 22px;
     text-align: center;
 }
 
-#basic p:last-of-type {
+#prices p:last-of-type {
     border: 2px solid #e4e4e4;
-    width: 130px;
-    height: 50px;
-    padding-top: 50px;
-    padding-bottom: 30px;
+    width: 100px;
+    height: 30px;
+    padding-top: 30px;
+    padding-bottom: 40px;
     border-radius: 50%;
+    margin: 5px auto 20px auto;
+    color: #c4c4c4;
 
+}
+
+.cost {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+tr:nth-child(2) {
+    background-color: #e4e4e4;
+    color: #8c8c8c;
+    font-size: 20px;
+}
+
+tr:nth-child(3) {
+    color: #757575;
+    background-color: #f1f1f1;
+    font-size: 20px;
+}
+
+tr:nth-child(4) {
+    background-color: #e4e4e4;
+    color: #8c8c8c;
+    font-size: 20px;
+}
+
+tr:nth-child(5) {
+    color: #757575;
+    background-color: #f1f1f1;
+    font-size: 20px;
+}
+
+.none {
+    background-color: #f9f9f9;
 }
 
 #prices button {
@@ -296,7 +375,6 @@ p[type="button"] {
     height: 33px;
     border-radius: 7px;
     font-size: 15px;
-
 }
 
 #contact {
@@ -308,7 +386,6 @@ p[type="button"] {
 footer {
     height: 100px;
     background-color: #ffffff;
-    border: 2px solid red;
     color: #b0b0b0;
 }
 
