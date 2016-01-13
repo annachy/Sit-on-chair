@@ -42,6 +42,11 @@ sup {
     top: -0.5em;
 }
 
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
 #logo {
     float: left;
     text-transform: uppercase;
@@ -90,6 +95,8 @@ nav ul li a {
     text-transform: none;
     display: block;
 }
+
+
 
 .icon-up-dir {
     border: 2px solid red;
@@ -176,7 +183,6 @@ button {
     color: white;
     display: block;
     margin: 50px auto 0 auto;
-
 }
 
 
@@ -307,10 +313,11 @@ p[class="circle-top"] {
 }
 
 /*
-.inner-circle {             jak to wypozycjonować??? (uwaga -  <div class="inner-circle"> usunięty z htmla)
+.inner-circle {
     position: absolute;
-    width: 30px;
-    height: 30px;
+    width: 50%;
+    height: 0;
+    padding-bottom: 50%;
     border-radius: 50%;
     background-color: #c2c2c2;
 }
@@ -374,6 +381,41 @@ tr:nth-child(5) {
     height: 33px;
     border-radius: 7px;
     font-size: 15px;
+}
+
+#standard {
+    background-color: #27c7ab;
+    border: 1px solid #27c7ab;
+}
+
+#standard .none {
+    background-color: #27c7ab;
+}
+
+#standard tr:nth-child(2), #standard tr:nth-child(4) {
+    background-color: #ffffff;
+    color: #9f9f9f;
+}
+
+#standard tr:nth-child(3) {
+    background-color: #f1f1f1;
+    color: #9f9f9f;
+}
+
+#standard button {
+    background-color: #ffffff;
+    color: #27c7ab;
+}
+
+
+
+#standard p:last-of-type {
+    background-color: #ffffff;
+    color: #27c7ab;
+}
+
+#standard td p:nth-of-type(2) {
+    color: #ffffff;
 }
 
 #contact {
