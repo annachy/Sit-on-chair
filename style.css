@@ -93,18 +93,15 @@ nav ul li a {
 
 .dropdown a {
     text-transform: none;
-    display: block;
+    display: block;    /*dlaczego nie działa? */
 }
 
-
-
 .icon-up-dir {
-    border: 2px solid red;
     color: black;
     font-size: 40px;
     position: absolute;
-    display: none;
-
+    top: -25px;
+    left: 33px;
 }
 
 nav ul li:hover > #up.dir {
@@ -267,7 +264,7 @@ button {
     float: left;
     width: 330px;
     height: 500px;
-    border: 1px solid #d3d3d3;
+    border: 2px solid #d3d3d3;
     box-sizing: border-box;
 }
 
@@ -312,16 +309,16 @@ p[class="circle-top"] {
     top: -40px;
 }
 
-/*
 .inner-circle {
-    position: absolute;
-    width: 50%;
-    height: 0;
-    padding-bottom: 50%;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
+    position: absolute;
+    top: 24%;   /*dlaczego taka wartość??? dopasowane met. prób i błędów, w oryg. przykładzie było top i left 50%*/
+    left: 24%;
     background-color: #c2c2c2;
 }
-*/
+
 
 td p:nth-of-type(2) {
     text-transform: uppercase;
@@ -407,8 +404,6 @@ tr:nth-child(5) {
     color: #27c7ab;
 }
 
-
-
 #standard p:last-of-type {
     background-color: #ffffff;
     color: #27c7ab;
@@ -416,6 +411,19 @@ tr:nth-child(5) {
 
 #standard td p:nth-of-type(2) {
     color: #ffffff;
+}
+
+#standard .inner-circle {
+    background-color: #ffffff;
+}
+
+#standard .circle-top {
+    background-color: #27c7ab;
+    border-color: #27c7ab;
+}
+
+#standard p:last-of-type {
+    border-color: #27c7ab;
 }
 
 #contact {
